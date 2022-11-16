@@ -19,6 +19,10 @@ function AppFunction() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        if(!newTask.title) {
+            return
+            }
+            
         setAllTasks((prev) => {
             return [newTask, ...prev]
         })
