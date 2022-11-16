@@ -18,6 +18,7 @@ function AppFunction() {
     
     const handleSubmit = (e) => {
         e.preventDefault();
+
         setAllTasks((prev) => {
             return [newTask, ...prev]
         })
@@ -27,8 +28,10 @@ function AppFunction() {
         });
     }
 
-    const handleDelete = () => {
-
+    const handleDelete = (taskId) => {
+        setAllTasks(
+            allTasks.filter((task) => task.id !== taskId) // I think this is mutating state directly, need to check
+        )
     }
 
     return (
