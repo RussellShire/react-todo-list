@@ -22,7 +22,7 @@ function AppFunction() {
         if(!newTask.title) {
             return
             }
-            
+
         setAllTasks((prev) => {
             return [newTask, ...prev]
         })
@@ -33,9 +33,14 @@ function AppFunction() {
     }
 
     const handleDelete = (taskId) => {
-        setAllTasks(
-            allTasks.filter((task) => task.id !== taskId) // I think this is mutating state directly, need to check
+        const allTasksClone = structuredClone(allTasks)
+        setAllTasks(allTasksClone.filter((task) => task.id !== taskId) // I think this is mutating state directly, need to check
         )
+
+        // I think this is mutating state directly, need to check
+        // setAllTasks(
+        //     allTasks.filter((task) => task.id !== taskId) 
+        // )
     }
 
     return (
