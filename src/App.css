@@ -18,18 +18,19 @@ html, body {
 }
 
 h1 {
-  margin: 8px 0;
+  margin: 1rem 0;
 }
 
 form {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin: 1rem 2rem 2rem;
 }
 
 input,
 textarea {
-  padding: 5px;
+  padding: 0.7rem;
 }
 
 form button {
@@ -46,13 +47,14 @@ ul {
 
 ul {
   padding: 0;
+  margin: 1rem 2rem 2rem;
 }
 
 li {
   background-color: Cornsilk;
   border: 1px solid BurlyWood;
-  border-radius: 5px 2px;
-  margin: 8px 0;
+  border-radius: 10px 1px;
+  margin: 0.5rem 0;
 }
 
 li div {
@@ -80,6 +82,7 @@ li h2 {
   background-color: NavajoWhite;
   margin: 0;
   padding: 4px;
+  border-radius: 10px 1px;
 }
 
 li p {
