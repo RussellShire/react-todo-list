@@ -2,9 +2,9 @@
 
 This is a To Do list in React.
 
-<!-- # Hosted
+# Hosted
 
-https://russellshire.github.io/react-todo-list -->
+https://russellshire.github.io/react-todo-list
 
 # Project Specifications
 
