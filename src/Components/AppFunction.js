@@ -36,11 +36,6 @@ function AppFunction() {
         const allTasksClone = structuredClone(allTasks)
         setAllTasks(allTasksClone.filter((task) => task.id !== taskId) // I think this is mutating state directly, need to check
         )
-
-        // I think this is mutating state directly, need to check
-        // setAllTasks(
-        //     allTasks.filter((task) => task.id !== taskId) 
-        // )
     }
 
     return (
