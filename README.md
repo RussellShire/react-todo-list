@@ -12,7 +12,11 @@ https://russellshire.github.io/react-todo-list
 - Tasks can be deleted once added
 - Use Functional React with Hooks rather than classes
 
-<!-- ## Optional To Do: -->
+## Optional To Do:
+
+- Add timers on items
+- intergrate with a backend database
+- Add individual user logins
 
 ## Credit
 
